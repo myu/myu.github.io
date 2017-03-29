@@ -16,6 +16,9 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.btn {border-radius: 10px;}
+.bg-red {background: #9a234f; color: #fff;}
+.bg-red a {color: #fff;}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -31,10 +34,21 @@ body {
 
 /* Custom Button Styles */
 
-.btn-dark {
-    border-radius: 0;
+.btn_circle {
+    border-radius: 50%;
+    background: none;
+    border:1px solid #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 35px 0 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: rgba(3,3,3,0.4);
 }
 
 .btn-dark:hover,
@@ -45,7 +59,6 @@ body {
 }
 
 .btn-light {
-    border-radius: 0;
     color: #333;
     background-color: rgb(255,255,255);
 }
